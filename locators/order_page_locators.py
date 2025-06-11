@@ -58,4 +58,5 @@ class MainPageLocators:
         By.XPATH,
         ".//div[contains(@class, 'Order_ModalHeader') and contains(text(), 'Заказ оформлен')]",
     )
-
+    LOGO_YANDEX_XPATH = (By.XPATH, ".//a[contains(@class, 'Header_LogoYandex')]")
+    LOGO_SCOOTER_XPATH = (By.XPATH, ".//a[contains(@class, 'Header_LogoScooter')]")
