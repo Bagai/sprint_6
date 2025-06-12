@@ -1,6 +1,7 @@
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as ex
 
+
 class BasePage:
 
     def __init__(self, driver):
@@ -33,3 +34,9 @@ class BasePage:
         self.driver.execute_script(
             "arguments[0].scrollIntoView();", self.find_element_with_wait(locator)
         )
+
+    def check_element_is_displayed(self, locator):
+        return self.find_element_with_wait(locator).is_displayed()
+
+    def open_last_tab(self):
+        self.driver.switch_to("-1")

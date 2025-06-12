@@ -1,7 +1,7 @@
 from selenium.webdriver.common.by import By
 
 
-class MainPageLocators:
+class OrderPageLocators:
     NAME_INPUT_XPATH = (
         By.XPATH,
         ".//input[@placeholder='* Имя']",
@@ -22,6 +22,10 @@ class MainPageLocators:
         By.XPATH,
         ".//input[@placeholder='* Когда привезти самокат']",
     )
+    DATE_CLICK_XPATH = (
+        By.XPATH,
+        ".//div[text()='13']",
+    )
     METRO_STATION_XPATH = (
         By.XPATH,
         ".//div[text()='Бульвар Рокоссовского']",
@@ -32,11 +36,11 @@ class MainPageLocators:
     )
     DURATION_XPATH = (
         By.XPATH,
-        ".//input[text()='* Срок аренды']",
+        ".//div[text()='* Срок аренды']",
     )
     SET_DURATION_XPATH = (
         By.XPATH,
-        ".//div[text()='сутки']",
+        ".//div[text()='двое суток']",
     )
     COLOR_XPATH = (
         By.XPATH,
@@ -45,6 +49,10 @@ class MainPageLocators:
     COMMENT_XPATH = (
         By.XPATH,
         ".//input[@placeholder='Комментарий для курьера']",
+    )
+    NEXT_ORDER_BUTTON_XPATH = (
+        By.XPATH,
+        ".//button[contains(@class, 'Button_Middle') and text()='Далее']",
     )
     ORDER_BUTTON_XPATH = (
         By.XPATH,
@@ -58,5 +66,3 @@ class MainPageLocators:
         By.XPATH,
         ".//div[contains(@class, 'Order_ModalHeader') and contains(text(), 'Заказ оформлен')]",
     )
-    LOGO_YANDEX_XPATH = (By.XPATH, ".//a[contains(@class, 'Header_LogoYandex')]")
-    LOGO_SCOOTER_XPATH = (By.XPATH, ".//a[contains(@class, 'Header_LogoScooter')]")

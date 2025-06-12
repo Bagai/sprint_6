@@ -8,7 +8,7 @@ class MainPageLocators:
     )
     BUTTON_FOOTER_ORDER = (
         By.XPATH,
-        ".//button[contains(@class, 'Button_UltraBig')]",
+        ".//div[contains(@class, 'Home_FinishButton')]/button[contains(@class, 'Button_UltraBig') and text()='Заказать']",
     )
     QUESTION_XPATH = (
         By.XPATH,

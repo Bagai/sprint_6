@@ -10,6 +10,7 @@ answer_texts = {
 }
 
 url_main_page = "https://qa-scooter.praktikum-services.ru/"
+url_order_page = "https://qa-scooter.praktikum-services.ru/order"
 
 order_data_set_1 = {
     "name": "Денис",
